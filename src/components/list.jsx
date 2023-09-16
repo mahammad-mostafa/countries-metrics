@@ -1,6 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import Item from './item';
 import { select } from '../slices/countries';
+import Indicator from './indicator';
+import Styles from '../styles/list.module.css';
 
 const List = () => {
   const dispatch = useDispatch();
@@ -16,20 +18,20 @@ const List = () => {
     result = countries.filter((country) => country.region === selection);
   }
   if (loading) {
-    return <h2>Loading</h2>;
-  }
-  if (error !== null) {
-    return <h2>{error}</h2>;
+    return <Indicator loading="true" />;
   }
   return (
     <section>
-      <select name="regions" onChange={(event) => dispatch(select(event.target.value))}>
+      <h2 className={Styles.title}>Filter countries by continent</h2>
+      <select className={Styles.select} name="regions" onChange={(event) => dispatch(select(event.target.value))} value={selection}>
         <option value="all">All</option>
         {regions.map((region) => <option key={region} value={region}>{region}</option>)}
       </select>
-      <ul>
-        {result.map((country) => <Item key={country.id} country={country} />)}
-      </ul>
+      {error === null && result.length > 0 ? (
+        <ul className={Styles.list}>
+          {result.map((country) => <Item key={country.id} country={country} />)}
+        </ul>
+      ) : <Indicator message={error} length={result.length} />}
     </section>
   );
 };

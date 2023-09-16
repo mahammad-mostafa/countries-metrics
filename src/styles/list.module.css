@@ -1,0 +1,36 @@
+.title {
+  text-align: center;
+  font: 1rem var(--bold-font);
+}
+
+.select {
+  width: 80%;
+  display: block;
+  padding: 10px;
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  margin: 10px auto;
+  outline: none;
+}
+
+.list {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, 50%);
+  background-color: var(--border-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .select {
+    width: 300px;
+  }
+
+  .list {
+    grid-template-columns: repeat(4, 25%);
+  }
+}

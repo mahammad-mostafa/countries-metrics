@@ -1,0 +1,47 @@
+.button {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  text-align: start;
+  background-color: var(--page-color);
+  transition: all 0.5s ease-out 0.5s;
+}
+
+.flip {
+  opacity: 0;
+  transform: rotateY(90deg);
+}
+
+.flag {
+  width: 60%;
+  aspect-ratio: 8 / 5;
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+}
+
+.name {
+  text-align: end;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font: 1rem var(--bold-font);
+  margin-top: 25px;
+}
+
+.number {
+  font-style: italic;
+  text-align: end;
+}
+
+.browse {
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  inset-inline-end: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .name {
+    font-size: 1.25rem;
+  }
+}

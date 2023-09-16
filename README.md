@@ -57,6 +57,7 @@ Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 - Data list is persistent & fetched from remote server
 - Filtering countries list by region names
 - Displays individual country details
+- Transition effect between routed pages
 - Back navigation to main page
  
 <p align="right"><a href="#title">back to top</a></p>
@@ -151,6 +152,7 @@ Like this project? Show your support by starring!
 # 🙏🏻 Acknowledgements
 
 I thank everyone at **Microverse** for guiding me through this project.
+Special thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) who built the reference [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 <p align="right"><a href="#title">back to top</a></p>
 

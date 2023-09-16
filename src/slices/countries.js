@@ -6,15 +6,16 @@ const states = {
 
 export const fetcher = createAsyncThunk('countries/fetch', async (_, { rejectWithValue }) => {
   try {
-    const response = await fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,region');
+    const response = await fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,timezones,region');
     if (response.ok) {
       const result = await response.json();
       return result.map((item) => {
         const {
-          name, flags, capital, region, population,
+          name, flags, capital, region, population, timezones,
         } = item;
         return {
           region,
+          timezones,
           population,
           flag: flags.png,
           name: name.common,
