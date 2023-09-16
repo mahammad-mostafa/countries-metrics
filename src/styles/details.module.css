@@ -1,0 +1,50 @@
+.flag {
+  width: 80%;
+  display: block;
+  aspect-ratio: 8 / 5;
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+  margin: 10px auto 20px;
+}
+
+.labels {
+  display: flex;
+  font-size: 1rem;
+  padding: 10px;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+
+.labels:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+.flip {
+  opacity: 0;
+  transform: rotateX(90deg);
+}
+
+.text {
+  font-family: var(--bold-font);
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 45% 1fr;
+  }
+
+  .flag {
+    width: 100%;
+    grid-row: 1 / 5;
+    margin: 0;
+  }
+
+  .labels {
+    font-size: 1.25rem;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: 5px;
+  }
+}
