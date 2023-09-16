@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const states = {
-  list: [], regions: [], selection: 'all', loading: true, error: null,
+  list: [], regions: [], selection: 'All', loading: true, error: null,
 };
 
 export const fetcher = createAsyncThunk('countries/fetch', async (_, { rejectWithValue }) => {

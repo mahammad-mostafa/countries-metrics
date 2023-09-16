@@ -12,7 +12,7 @@ const List = () => {
   const countries = useSelector((state) => state.countries.list);
   const selection = useSelector((state) => state.countries.selection);
   let result = countries;
-  if (selection === 'all') {
+  if (selection === 'All') {
     result = countries;
   } else {
     result = countries.filter((country) => country.region === selection);
@@ -24,7 +24,7 @@ const List = () => {
     <section>
       <h2 className={Styles.title}>Filter countries by continent</h2>
       <select className={Styles.select} name="regions" onChange={(event) => dispatch(select(event.target.value))} value={selection}>
-        <option value="all">All</option>
+        <option value="All">All</option>
         {regions.map((region) => <option key={region} value={region}>{region}</option>)}
       </select>
       {error === null && result.length > 0 ? (
