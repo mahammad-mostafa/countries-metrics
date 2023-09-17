@@ -40,7 +40,8 @@ The live build is generated inside the `build` directory.
 Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 
 📌 **Live Demo:**
-- See the project live from [here]().
+- See the project live from [here](https://countries-metrics-rstm.onrender.com).
+- Watch a showcase of the project from [here](https://www.loom.com/share/fa94a1baa90d4f2e888c1ee90f244e6d?sid=f50ac970-62c1-49d5-aa31-76a6c4298587).  
 
 📌 **Tech Stack:**
 - Framework used is `ReactJS`
@@ -152,6 +153,7 @@ Like this project? Show your support by starring!
 # 🙏🏻 Acknowledgements
 
 I thank everyone at **Microverse** for guiding me through this project.
+<br/>
 Special thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) who built the reference [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 <p align="right"><a href="#title">back to top</a></p>

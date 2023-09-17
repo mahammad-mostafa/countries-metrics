@@ -4,12 +4,6 @@
   padding: 10px;
   text-align: start;
   background-color: var(--page-color);
-  transition: all 0.5s ease-out 0.5s;
-}
-
-.flip {
-  opacity: 0;
-  transform: rotateY(90deg);
 }
 
 .flag {

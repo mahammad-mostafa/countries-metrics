@@ -25,7 +25,7 @@ const Layout = () => {
     <>
       <Header />
       <main>
-        <section id="page" className={fade ? 'fade' : null} style={fade ? null : { transition: 'opacity 0.25s linear' }}>
+        <section id="page" style={fade ? { opacity: 0 } : { transition: 'opacity 0.25s linear' }}>
           <Outlet />
         </section>
       </main>
