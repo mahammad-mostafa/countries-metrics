@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 1;
+  background-color: var(--page-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navigation {
+  height: 50px;
+  display: flex;
+  gap: 5px;
+  padding-inline: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  width: 30px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.title {
+  overflow: hidden;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    height: 70px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .button {
+    width: 50px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

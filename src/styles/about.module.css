@@ -1,0 +1,8 @@
+.title {
+  font: 2rem var(--bold-font);
+  margin: 10px auto;
+}
+
+.text {
+  font-size: 1rem;
+}
