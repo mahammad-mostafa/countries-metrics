@@ -13,15 +13,7 @@ Check the below contents for further details about this project.
 # 📗 Contents
 
 - [Description](#description)
-  - [Live Demo](#description)
-  - [Tech Stack](#description)
-  - [Key Features](#description)
 - [Instructions](#instructions)
-  - [Prerequisites](#instructions)
-  - [Installation](#instructions)
-  - [Development](#instructions)
-  - [Testing](#instructions)
-  - [Deployment](#instructions)
 - [Authors](#authors)
 - [Future](#future)
 - [Contributions](#contributions)
@@ -47,11 +39,11 @@ All project dynamic files are contained in `src` directory while static assets a
 The live build is generated inside the `build` directory.
 Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 
-## 📌 **Live Demo:**
+📌 **Live Demo:**
 - See the project live from [here](https://countries-metrics-rstm.onrender.com).
 - Watch a showcase of the project from [here](https://www.loom.com/share/fa94a1baa90d4f2e888c1ee90f244e6d?sid=f50ac970-62c1-49d5-aa31-76a6c4298587).  
 
-## 📌 **Tech Stack:**
+📌 **Tech Stack:**
 - Framework used is `ReactJS`
 - State management by `Redux Toolkit`
 - Page structure is built with `JSX`
@@ -60,7 +52,7 @@ Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 - Bundling is done with `WebPack`
 - Uint testing with `Jest`
 
-## 📌 **Key Features:**
+📌 **Key Features:**
 - Single page app with all content loaded dynamically
 - Responsive layout with all screen sizes
 - Data list is persistent & fetched from remote server
@@ -79,28 +71,28 @@ Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 
 You can easily download or fork this repository and work on it immadiately!
 
-## 📌 **Prerequisites:**
+📌 **Prerequisites:**
 - `NodeJS` for installing & running all packages
 
-## 📌 **Installation:**
+📌 **Installation:**
 - Install all dependencies with `npm`
 ```
 npm install
 ```
 
-## 📌 **Development:**
+📌 **Development:**
 - For live development on `localhost:3000` run:
 ```
 npm run start
 ```
 
-## 📌 **Testing:**
+📌 **Testing:**
 - Unit testing is done with:
 ```
 npm run test
 ```
 
-## 📌 **Deployment:**
+📌 **Deployment:**
 - You can deploy this project by uploading files in the `build` folder to a live server.
 - Create the distribution build using this command:
 ```
